@@ -1,8 +1,8 @@
-import { motion } from "framer-motion";
-import React from "react";
-import styled from "styled-components";
-import { Facebook, Github, LinkedIn } from "../components/AllSvgs";
-import { DarkTheme } from "../components/Themes";
+import { motion } from 'framer-motion';
+import React from 'react';
+import styled from 'styled-components';
+import { Facebook, Github, LinkedIn } from '../components/AllSvgs';
+import { DarkTheme } from '../components/Themes';
 
 const Icons = styled.div`
   display: flex;
@@ -23,8 +23,7 @@ const Icons = styled.div`
 const Line = styled(motion.span)`
   width: 2px;
   height: 8rem;
-  background-color: ${(props) =>
-    props.color === "dark" ? DarkTheme.text : DarkTheme.body};
+  background-color: ${(props) => (props.color === 'dark' ? DarkTheme.text : DarkTheme.body)};
 `;
 
 const SocialIcons = (props) => {
@@ -33,55 +32,28 @@ const SocialIcons = (props) => {
       <motion.div
         initial={{ scale: 0 }}
         animate={{ scale: [0, 1, 1.5, 1] }}
-        transition={{ type: "spring", duration: 1, delay: 1 }}
+        transition={{ type: 'spring', duration: 1, delay: 1 }}
       >
-        <a
-          style={{ color: "inherit" }}
-          target="_blank"
-          rel="noreferrer"
-          href={"https://github.com/namnh198/"}
-        >
-          <Github
-            width={25}
-            height={25}
-            fill={props.theme === "dark" ? DarkTheme.text : DarkTheme.body}
-          />
+        <a style={{ color: 'inherit' }} target="_blank" rel="noreferrer" href={'https://github.com/namnh198/'}>
+          <Github width={25} height={25} fill={props.theme === 'dark' ? DarkTheme.text : DarkTheme.body} />
         </a>
       </motion.div>
       <motion.div
         initial={{ scale: 0 }}
         animate={{ scale: [0, 1, 1.5, 1] }}
-        transition={{ type: "spring", duration: 1, delay: 1.4 }}
+        transition={{ type: 'spring', duration: 1, delay: 1.4 }}
       >
-        <a
-          style={{ color: "inherit" }}
-          target="_blank"
-          rel="noreferrer"
-          href={"https://www.facebook.com/namnh198/"}
-        >
-          <Facebook
-            width={25}
-            height={25}
-            fill={props.theme === "dark" ? DarkTheme.text : DarkTheme.body}
-          />
+        <a style={{ color: 'inherit' }} target="_blank" rel="noreferrer" href={'https://www.facebook.com/namnh198/'}>
+          <Facebook width={25} height={25} fill={props.theme === 'dark' ? DarkTheme.text : DarkTheme.body} />
         </a>
       </motion.div>
       <motion.div
         initial={{ scale: 0 }}
         animate={{ scale: [0, 1, 1.5, 1] }}
-        transition={{ type: "spring", duration: 1, delay: 1.6 }}
+        transition={{ type: 'spring', duration: 1, delay: 1.6 }}
       >
-        <a
-          style={{ color: "inherit" }}
-          target="_blank"
-          rel="noreferrer"
-          href={"https://www.linkedin.com/in/tieugum/"}
-        >
-          <LinkedIn
-            width={25}
-            height={25}
-            fill={props.theme === "dark" ? DarkTheme.text : DarkTheme.body}
-          />
+        <a style={{ color: 'inherit' }} target="_blank" rel="noreferrer" href={'https://www.linkedin.com/in/namnh198/'}>
+          <LinkedIn width={25} height={25} fill={props.theme === 'dark' ? DarkTheme.text : DarkTheme.body} />
         </a>
       </motion.div>
 
@@ -91,10 +63,10 @@ const SocialIcons = (props) => {
           height: 0,
         }}
         animate={{
-          height: "8rem",
+          height: '8rem',
         }}
         transition={{
-          type: "spring",
+          type: 'spring',
           duration: 1,
           delay: 0.8,
         }}
